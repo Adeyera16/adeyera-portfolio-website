@@ -109,6 +109,7 @@ header li{
     }
     .hamburger-menu{
         display: flex;
+        color: white;
     }
     .nav-links{
         display: none;
