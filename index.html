@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&f[]=cabinet-grotesk@400&display=swap" rel="stylesheet">
+    <title>Adeyera Asimolowo Portfolio</title>
+</head>
+<body>
+    <header>
+            <span>
+                <h1>Adeyera Asimolowo</h1>
+                <p>Software Engineer</p>
+            </span>
+            <div class="hamburger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                  </svg>
+                  
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sideNav hide" >
+                <span class="cancel-button" id="cancel" onclick="cancel()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </span>
+                <a href="#">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+    </header>
+    <section class="content-wrapper">
+        <div class="job-title">
+            <h1>Frontend Developer</h1>
+        </div>
+        <div>
+            <img src="adeyeras_pic.jpeg" alt="">
+        </div>
+        <div class="name">
+            <h1>Adeyera Asimolowo</h1>
+        </div>
+    </section>
+    <section class="about-me">
+        <div class="about-me-text">
+            <h2>About Me</h2>
+            <p>I am a Frontend developer who is passionate about building functional web applications, I love finding solutions to complex problems and seeing the end result of my efforts improve user experience.</p>
+        </div>
+        <div class="skills">
+            <div class="background">
+
+            </div>
+            <div class="skills-list">
+                <h2>skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Github</li>
+                    <li>Vim</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <h1>Contact me</h1>
+        <ul>
+            <li> <a href="https://twitter.com/lizzy_ashy" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> Twitter</a></li>
+           <li> <a href="https://github.com/Adeyera16" target="_blank"><ion-icon name="logo-github"></ion-icon>Github</a></li>
+           <li><a class="linked-in"  href="https://linkedin.com/in/adeyera-asimolowo-3474931b1" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon>Linked in</a></li>
+        </ul>
+        <span>&copy; Adeyera 2022</span>
+    </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLink = document.querySelector('.sideNav');
+    const closeButton = document.querySelector('.cancel-button')
+
+    hamburger.addEventListener('click', () => {
+    navLink.classList.toggle('hide');
+});
+    function hide() {
+      document.getElementById("cancel").style.display = "none";
+}
+</script>
+</body>
+</html>
